@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        /*
+            # = id
+            . = class
+            : = pseudo-classe
+            :: = pseudo-element
+            >  = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color: rgba(173, 100, 100, 0.534);
+        
+        }
+        .especial::before{
+            content: "⇒ ";
+        }
+       .especial::after{
+            content: " ⇐";
+        }
+        .especial{
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li type="none"><a href="https://github.com/IGTag" target="_blank">Perfil GitHub</a></li>
+        <li type="none"><a href="https://www.youtube.com/channel/UCw8UY1Je1uxfxX0zen8TY5A" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li type="none"><a href="https://gigafy.netlify.app/" target="_blank" class="especial">Site GIGAFY</a></li>
+    </ul>
+</body>
+</html>

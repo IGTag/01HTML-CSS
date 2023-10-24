@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Simple Summer";
+    src: url("fonts/Summer.otf") format("opentype")
+}
+body{
+    
+    background-image: linear-gradient(to bottom, #FF9E00, #FF8500, #FF6D00, #9D4EDD, #5A189A, #240046);
+    height: 100%;
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    width: 1350px;
+    height: 1000px;
+    padding: 10px;
+    margin:auto;
+}
+p{
+    text-align: center; 
+}
+h1{
+    font-family: "Summer", Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px #A2D2FF;
+}
+h2{
+    color: #9b9079;
+}

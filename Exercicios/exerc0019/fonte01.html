@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @font-face {
+    font-family: "Simple Summer";
+    src: url("/fonts/Summer.otf") format("opentype")
+    }
+        body{
+            font-family: 'Simple Summer', Arial, Helvetica, sans-serif ;
+            /* Medidas absolutas
+            cm, mm, in, px, pt, pc
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 16px; 
+            /* lighter normal bold bolder*/
+        }
+        h1{
+            /* shorthand font 
+            - font-style -> font-weight -> font-size -> font-family
+            */
+            font: normal normal 3em "Simple Summer", sans-serif;
+        }
+        h2{
+            font: bold 2em "Simple Summer";
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com fontes</h1>
+        <h2>Titulo 1
+        </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum atque tempore, perspiciatis sed quis nisi tempora enim voluptate aliquid provident mollitia, quo libero quaerat praesentium aut, porro commodi assumenda molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore illum minus assumenda similique tempora voluptates eum, impedit voluptate provident vitae quis neque maiores eos maxime ipsa? Quibusdam quia quisquam deserunt?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quidem repellendus voluptatibus ab vero dolorem ipsa, autem sit, corporis voluptate quas a nobis quisquam delectus vel. Voluptas aspernatur dolorum quod.</p>
+        <h2>Subtitulo do exercicio</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ad facere est corrupti corporis asperiores. Beatae blanditiis ipsam reiciendis quam dolor laudantium velit. Facilis eum, consequatur quos excepturi soluta voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo labore quidem repellat? Possimus totam dicta accusantium aspernatur hic voluptates vero rem animi quo, unde porro voluptatibus deserunt non soluta esse!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsa doloribus natus illo. Blanditiis necessitatibus, laudantium placeat nulla minima voluptatibus nostrum earum ex, quisquam dolor facilis minus cum hic eligendi.</p>
+    </main>
+</body>
+</html>

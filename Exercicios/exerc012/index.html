@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse sitem em vários dispositivos diferents ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="/imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="foto grande">
+        </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reprozir áudios em HTML5.</p>
+    <audio preload="metadata" controls>
+       <source src="media/A_Night_Together.mp3" type="audio/mpeg">
+    </audio>
+    <p> Código usado:
+            <code>
+                &lt;audio preload="metadata" controls&gt;
+                &lt;source src="media/A_Night_Together.mp3" type="audio/mpeg"&gt;
+                &lt;/audio&gt;
+            </code>
+    </p>
+</body>
+</html>
